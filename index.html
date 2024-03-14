@@ -16,172 +16,263 @@
   </head>
   <body>
     <div>
-        <header>
-          <h1>Dioses de egipto</h1>
-        </header>
-      </div>
-  
-      <div class="div linea">
-          <h3>Sinopsis</h3>
-  
-        <p>
-          En un viaje épico a través de las entrañas del inframundo, el destino de
-          los protagonistas se entrelaza con la promesa de un juicio final. Saya,
-          una intrépida exploradora, se embarca en la peligrosa misión de
-          atravesar las nueve puertas del reino de los muertos, con la esperanza
-          de reunir las riquezas necesarias para enfrentar el juicio que
-          determinará su destino eterno. Sin embargo, el camino está sembrado de
-          trampas mortales y guardianes divinos. Entre las sombras se ocultan
-          dioses ancestrales como Osiris, Anubis y Amentit, algunos dispuestos a
-          brindar ayuda desinteresada mientras otros conspiran para desviar a los
-          valientes viajeros de su destino. Cada paso hacia adelante revela nuevas
-          herramientas, tesoros tentadores y señales misteriosas que desafían la
-          determinación de Saya y Beek, quien se une a la travesía en compañía de
-          Orus en un intento desesperado por salvar a su compañera. Enfrentando la
-          oscuridad que acecha en cada esquina y la incertidumbre del juicio
-          final, los protagonistas se ven obligados a confrontar sus propios
-          demonios internos mientras luchan por la redención y la esperanza de un
-          futuro más allá del velo de la muerte. ¿Lograrán superar las pruebas del
-          inframundo y alcanzar la redención final, o sucumbirán ante las fuerzas
-          oscuras que acechan en la sombra? El destino de sus almas pende de un
-          hilo mientras la batalla por la supervivencia se desata en el corazón
-          del inframundo.
-        </p>
-      </div>
-      <div class="contenedor">
-
-        <div class="suelo"></div>
-        
-        <div class="dino dino-corriendo"></div>
- <div class="game-over">GAME OVER</div>
-        <div class="score">0</div>
-
+      <header>
+        <h1>Dioses de egipto</h1>
+      </header>
     </div>
 
-   
-    
+    <div class="div linea">
+      <h3>Sinopsis</h3>
 
-  
-      <div class="div container">
-        <h3>Comentarios</h3> 
-        <p>Puedes deja un comentario: ¿te gusto el juego; que mejorarias?</p>
-        <form id="frmContacto">
-          <div class="form-group">
-            <input type="hidden" name="hddIdComentario" id="hddIdComentario" />
-            <input type="hidden" name="opcionOpc" id="opcionOpc" />
-            <label for="txtNombre">Nombre completo</label>
-            <input
-              type="text"
-              name="txtNombre"
-              id="txtNombre"
-              class="form-control"
-              placeholder="Nombre"
-            />
-          </div>
-          <div class="form-group">
-            <label for="txtEmail">Email</label>
-            <input
-              type="email"
-              class="form-control"
-              name="txtEmail"
-              id="txtEmail"
-              placeholder="Email"
-            />
-          </div>
-          <div class="form-group">
-            <label for="txtTelefono">Telefono</label>
-            <input
-              type="number"
-              class="form-control"
-              name="txtTelefono"
-              id="txtTelefono"
-              placeholder="Telefono"
-            />
-          </div>
-          <div class="form-group">
-            <label for="txtComentario">Comentario</label>
-            <textarea
-              class="form-control"
-              id="txtComentario"
-              name="txtComentario"
-              placeholder="Comentario"
-              cols="16"
-              rows="8"
-            ></textarea>
-          </div>
-          <button type="button" id="btnInsertar" class="btn btn-primary">
-            Enviar comentarios
-          </button>
-          <button type="button" id="btnActualizar" class="btn btn-success">
-            Actualizar comentario
-          </button>
-          <button type="button" id="btnRegresar" class="btn btn-danger">
-            Limpiar
-          </button>
-  
-          <div>
-            <h3>Comentarios previos</h3>
-  
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th>Nombre</th>
-                  <th>Email</th>
-                  <th>Teléfono</th>
-                  <th>Comentario</th>
-                </tr>
-              </thead>
-              <tbody id="tblComentariosTbody" name="tblComentariosTbody"></tbody>
-            </table>
-          </div>
-        </form>
-      </div>
-      <footer id="comentarios">copyright 2024</footer>
-  
-<script>
-  $(document).ready(function() { //se asegura de que el arbol dom ya este cargado
-    $("#btnActualizar").hide(); //oculta el boton
-    $("#alert1").hide(); //oculta la alerta//hide() en gral oculta elementos
+      <p>
+        En un viaje épico a través de las entrañas del inframundo, el destino de
+        los protagonistas se entrelaza con la promesa de un juicio final. Saya,
+        una intrépida exploradora, se embarca en la peligrosa misión de
+        atravesar las nueve puertas del reino de los muertos, con la esperanza
+        de reunir las riquezas necesarias para enfrentar el juicio que
+        determinará su destino eterno. Sin embargo, el camino está sembrado de
+        trampas mortales y guardianes divinos. Entre las sombras se ocultan
+        dioses ancestrales como Osiris, Anubis y Amentit, algunos dispuestos a
+        brindar ayuda desinteresada mientras otros conspiran para desviar a los
+        valientes viajeros de su destino. Cada paso hacia adelante revela nuevas
+        herramientas, tesoros tentadores y señales misteriosas que desafían la
+        determinación de Saya y Beek, quien se une a la travesía en compañía de
+        Orus en un intento desesperado por salvar a su compañera. Enfrentando la
+        oscuridad que acecha en cada esquina y la incertidumbre del juicio
+        final, los protagonistas se ven obligados a confrontar sus propios
+        demonios internos mientras luchan por la redención y la esperanza de un
+        futuro más allá del velo de la muerte. ¿Lograrán superar las pruebas del
+        inframundo y alcanzar la redención final, o sucumbirán ante las fuerzas
+        oscuras que acechan en la sombra? El destino de sus almas pende de un
+        hilo mientras la batalla por la supervivencia se desata en el corazón
+        del inframundo.
+      </p>
+    </div>
+    <div class="contenedor">
+      <div class="suelo"></div>
 
-   // getComments();
+      <div class="dino dino-corriendo"></div>
+      <div class="game-over">GAME OVER</div>
+      <div class="score">0</div>
+    </div>
 
+    <div class="div container">
+      <h3>Comentarios</h3>
+      <p>Puedes deja un comentario: ¿te gusto el juego; que mejorarias?</p>
+      <form id="frmContacto">
+        <div class="form-group">
+          <input type="hidden" name="hddIdComentario" id="hddIdComentario" />
+          <input type="hidden" name="opcionOpc" id="opcionOpc" />
+          <label for="txtNombre">Nombre completo</label>
+          <input
+            type="text"
+            name="txtNombre"
+            id="txtNombre"
+            class="form-control"
+            placeholder="Nombre"
+          />
+        </div>
+        <div class="form-group">
+          <label for="txtEmail">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            name="txtEmail"
+            id="txtEmail"
+            placeholder="Email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="txtTelefono">Telefono</label>
+          <input
+            type="number"
+            class="form-control"
+            name="txtTelefono"
+            id="txtTelefono"
+            placeholder="Telefono"
+          />
+        </div>
+        <div class="form-group">
+          <label for="txtComentario">Comentario</label>
+          <textarea
+            class="form-control"
+            id="txtComentario"
+            name="txtComentario"
+            placeholder="Comentario"
+            cols="16"
+            rows="8"
+          ></textarea>
+        </div>
+        <button type="button" id="btnInsertar" class="btn btn-primary">
+          Enviar comentarios
+        </button>
+        <button type="button" id="btnActualizar" class="btn btn-success">
+          Actualizar comentario
+        </button>
+        <button type="button" id="btnRegresar" class="btn btn-danger">
+          Limpiar
+        </button>
 
-    $("#btnInsertar").click(function() { //se le otorga el envento onclick
-      $(`#opcionOpc`).prop("value", 1);
-      // $("#frmContacto").submit(function(){
-      var formData = $("#frmContacto").serialize(); //serializa el fomr,//investigagar mas
-      $.ajax({ //peticion ajax; hay maneraas mas recientes, investiga, no recuerdo el nombre
-        type: "POST", //escoge como mandar los datos, GET//POST//PUT//DELETE // anteriormente especificada en el method del form
-        url: "../controlador/clientesController.php", //lugar de destino del envio//ruta anteriormente en action del form
-        data: formData, //datos a mandar
-        success: function(data) { //tras la accion(mensaje), recibe una respuesta
-          console.log(data); //imprime data para saber su contenido
-          $("#alert1").show(); //muestra la alerta
-          $("#alert1").html(data) //coloca la info de la respuesta data, en la alerta
-          if (data.trim() === "Registro insertado") { //compara el valor recibido con el valor esperado
-            $("#alert1").attr("class", "alert-primary"); //otorga nuevos/distintos estilos de css boostrap
-          } else {
-            $("#alert1").attr("class", "alert-danger"); //addClass tambien funciona
-          }
+        <div>
+          <h3>Comentarios previos</h3>
 
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Teléfono</th>
+                <th>Comentario</th>
+              </tr>
+            </thead>
+            <tbody id="tblComentariosTbody" name="tblComentariosTbody"></tbody>
+          </table>
+        </div>
+      </form>
+    </div>
+    <footer id="comentarios">copyright 2024</footer>
+
+    <script>
+      //  document.getElementById("txtNombre").value="poooorr fiiiiiiiiiiinnn";//localiza un elemento el el arbolo dom por medio de su id y le asigna un valor
+
+      function actualizar(idcomentario, nombre, email, telefono, comentario) {
+        /*
+          //js
+          document.getElementById("txtNombre").value = nombre//localiza un elemento el el arbolo dom por medio de su id y le asigna un valor
+          document.getElementById("txtEmail").value = email
+          document.getElementById("txtTelefono").value = telefono
+          document.getElementById("txtComentario").value = comentario
+          */
+        //Jquery
+        $(`#hddIdComentario`).prop("value", idcomentario);
+        $(`#txtNombre`).prop("value", nombre);
+        $(`#txtEmail`).prop("value", email);
+        $(`#txtTelefono`).prop("value", telefono);
+        $(`#txtComentario`).prop("value", comentario);
+        $(`#opcionOpc`).prop("value", 3);
+
+        $(`#btnInsertar`).hide();
+        $(`#btnActualizar`).show();
+
+        $(`#btnActualizar`).click(function () {
+          var formData = $("#frmContacto").serialize(); //serializa el fomr,//investigagar mas
+
+          $.ajax({
+            //peticion ajax; hay maneraas mas recientes, investiga, no recuerdo el nombre
+            type: "POST", //escoge como mandar los datos, GET//POST//PUT//DELETE // anteriormente especificada en el method del form
+            url: "controllers/ComentariosController.php", //lugar de destino del envio//ruta anteriormente en action del form
+            data: formData, //datos a mandar, sugerencia propia: Intentar mandar la opcion opc, aqui, y no en el form serialize
+            success: function (data) {
+              //tras la accion(mensaje), recibe una respuesta
+              console.log(data); //imprime data para saber su contenido
+              $("#alert1").show(); //muestra la alerta
+              $("#alert1").html(data); //coloca la info de la respuesta data, en la alerta
+              if (data.trim() === "Se actualizo correctamente el registro") {
+                //compara el valor recibido con el valor esperado
+                $("#alert1").attr("class", "alert-primary"); //otorga nuevos/distintos estilos de css boostrap
+                getComments();
+                $(`#hddIdComentario`).prop("value", "");
+                $(`#txtNombre`).prop("value", "");
+                $(`#txtEmail`).prop("value", "");
+                $(`#txtTelefono`).prop("value", "");
+                $(`#txtComentario`).prop("value", ""); //se "limpian" los campos del formulario tras haber editado,
+                //asi  permitiendo la posiblidad de poder agregar uno nuevo.
+
+                $(`#btnInsertar`).show(); //oculta/muestra botones segun sea el caso estetico de acuerdo al actual estado del formulario
+                $(`#btnActualizar`).hide();
+              } else {
+                $("#alert1").attr("class", "alert-danger"); //addClass tambien funciona
+              }
+            },
+          });
+        });
+      }
+
+      function eliminar(idcomentario) {
+        if (confirm("¿Deseas eliminar el comentario selecionado?")) {
+          $.ajax({
+            type: "POST",
+            data: {
+              opcionOpc: 4,
+              idComentario: idcomentario,
+            },
+            url: "controllers/ComentariosController.php",
+            success: function (data) {
+              console.log(data); //imprime data para saber su contenido
+              $("#alert1").show(); //muestra la alerta
+              $("#alert1").html(data); //coloca la info de la respuesta data, en la alerta
+              if (data.trim() === "Eliminacion/borrado Exitoso") {
+                //compara el valor recibido con el valor esperado
+                $("#alert1").attr("class", "alert-primary"); //otorga nuevos/distintos estilos de css boostrap
+                getComments();
+              } else {
+                $("#alert1").attr("class", "alert-danger"); //addClass tambien funciona
+              }
+            },
+          });
+        } else {
         }
+      }
+      //TODO/ considerar la opcion de colocar uun ready para las otras funciones, o una funcion para el insertar comentarios, todas las funciones dentro de un solo ready
+      //TODO/ considera pros y contras, escoje la mejor opcion segun sea el caso
+
+      function getComments() {
+        $.ajax({
+          type: "POST",
+          data: {
+            opcionOpc: 2,
+          },
+          url: "controllers/ComentariosController.php",
+          success: function (data) {
+            $("#tblComentariosTbody").html(data); //revisar si js, jquery usaban el id o el name
+          },
+        });
+      }
+
+      //Jquery
+      $(document).ready(function () {
+        //se asegura de que el arbol dom ya este cargado
+        $("#btnActualizar").hide(); //oculta el boton
+        $("#alert1").hide(); //oculta la alerta//hide() en gral oculta elementos
+
+        getComments();
+
+        $("#btnInsertar").click(function () {
+          //se le otorga el envento onclick
+          $(`#opcionOpc`).prop("value", 1);
+          // $("#frmContacto").submit(function(){
+          var formData = $("#frmContacto").serialize(); //serializa el fomr,//investigagar mas
+          $.ajax({
+            //peticion ajax; hay maneraas mas recientes, investiga, no recuerdo el nombre
+            type: "POST", //escoge como mandar los datos, GET//POST//PUT//DELETE // anteriormente especificada en el method del form
+            url: "controllers/ComentariosController.php", //lugar de destino del envio//ruta anteriormente en action del form
+            data: formData, //datos a mandar
+            success: function (data) {
+              //tras la accion(mensaje), recibe una respuesta
+              console.log(data); //imprime data para saber su contenido
+              $("#alert1").show(); //muestra la alerta
+              $("#alert1").html(data); //coloca la info de la respuesta data, en la alerta
+              if (data.trim() === "Registro insertado") {
+                //compara el valor recibido con el valor esperado
+                $("#alert1").attr("class", "alert-primary"); //otorga nuevos/distintos estilos de css boostrap
+              } else {
+                $("#alert1").attr("class", "alert-danger"); //addClass tambien funciona
+              }
+            },
+          });
+        });
+        return false; //retorna respuesta//investiga que onda
       });
-    });
-    return false; //retorna respuesta//investiga que onda
-  });
-</script>
 
+      //});
+    </script>
 
-     <script src="assets/js/gae.js"></script>
-      <script
-        src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"
-      ></script>
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-        crossorigin="anonymous"
-      ></script>
+    <script src="assets/js/game.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
