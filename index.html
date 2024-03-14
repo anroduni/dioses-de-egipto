@@ -59,6 +59,11 @@
     <div class="div container">
       <h3>Comentarios</h3>
       <p>Puedes deja un comentario: ¿te gusto el juego; que mejorarias?</p>
+      
+      <div id="alert1" class="alert alert-default" role="alert">
+        A simple success alert—check it out!
+      </div>
+
       <form id="frmContacto">
         <div class="form-group">
           <input type="hidden" name="hddIdComentario" id="hddIdComentario" />
@@ -167,7 +172,7 @@
               console.log(data); //imprime data para saber su contenido
               $("#alert1").show(); //muestra la alerta
               $("#alert1").html(data); //coloca la info de la respuesta data, en la alerta
-              if (data.trim() === "Se actualizo correctamente el registro") {
+              if (data.trim() === "Comentario actualizado") {
                 //compara el valor recibido con el valor esperado
                 $("#alert1").attr("class", "alert-primary"); //otorga nuevos/distintos estilos de css boostrap
                 getComments();
@@ -201,7 +206,7 @@
               console.log(data); //imprime data para saber su contenido
               $("#alert1").show(); //muestra la alerta
               $("#alert1").html(data); //coloca la info de la respuesta data, en la alerta
-              if (data.trim() === "Eliminacion/borrado Exitoso") {
+              if (data.trim() === "Eliminacion exitosa.") {
                 //compara el valor recibido con el valor esperado
                 $("#alert1").attr("class", "alert-primary"); //otorga nuevos/distintos estilos de css boostrap
                 getComments();
@@ -252,7 +257,7 @@
               console.log(data); //imprime data para saber su contenido
               $("#alert1").show(); //muestra la alerta
               $("#alert1").html(data); //coloca la info de la respuesta data, en la alerta
-              if (data.trim() === "Registro insertado") {
+              if (data.trim() === "Hemos recibido su comentario exitosamente.") {
                 //compara el valor recibido con el valor esperado
                 $("#alert1").attr("class", "alert-primary"); //otorga nuevos/distintos estilos de css boostrap
               } else {
