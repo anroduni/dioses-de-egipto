@@ -1,0 +1,33 @@
+<p>el objetivo es recorrer por las 9 puertas del inframundo para llegar al juicio, reuniendo las riquezas necesarias para pagar la entrada
+        mientras avanzas por ahi, encontraras herramientas, tesoros, objetos y señales de algunos dioses, unos intentaran ayudarte y otros intentaran que falles
+        orus
+        osiris
+        anubis
+        amentit
+
+
+      te adentras en el papel de saya, quien recorre el inframundo  esperando su llegada al juicio final
+      o en el papel de beek , quien se aventura con orus para salvar a saya
+
+
+      adonis
+
+    </p>
+
+    nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+3130315f
