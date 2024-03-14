@@ -3,8 +3,8 @@ class Conexion
 {
     private $HOST = "127.0.0.1";
     private $USER = "unicuc";
-    private $PWD = "ejipto";
-    private $DB = "egipto";
+    private $PWD = "1234";
+    private $DB = "gamedegipto";
 
 function __construct() {}
 

@@ -12,7 +12,7 @@ class ComentariosModel
         $mysqli = $Conexion->crearConexion();
 
         if ($mysqli != null) {
-            $sql = "INSERT INTO tblcomentarios (nombre, email, telefono, comentario) 
+            $sql = "INSERT INTO comentarios (nombre, email, telefono, comentario) 
     VALUES ('$nombre', '$email', '$telefono', '$comentario')";
         }
 
@@ -33,9 +33,9 @@ class ComentariosModel
         $mysqli = $Conexion->crearConexion();
 
         if ($mysqli!=null) {
-            $sql = "UPDATE tblcomentarios 
+            $sql = "UPDATE comentarios 
         SET nombre='$nombre', email='$email', telefono='$telefono', comentario='$comentario' 
-        WHERE idComentario = $idComentario";
+        WHERE id = $idComentario";
 }
         if ($mysqli->query($sql)) {
             return "Comentario actualizado";
@@ -48,7 +48,18 @@ class ComentariosModel
 
     function SELECT()
     {
+        $conexion = new Conexion();
+        $mysqli = $conexion->crearConexion();
+        if ($mysqli !== null) {
+            //una vez se establece la conexion, se obtienen los datos de una tabla: tblcomentarios
+            $getComents = $mysqli->query("SELECT * FROM comentarios");
+         
+        }else{
+            echo "Falló la conexión: " . $mysqli;//notifica que hubo un error y cual error fue aparentemente
+            }
+        $mysqli->close(); //?cerrar conexion  
 
+        return $getComents;
     }
 
     function DELETE($idComentario)
@@ -56,8 +67,14 @@ class ComentariosModel
         $Conexion=new Conexion();
         $mysqli=$Conexion->crearConexion();
         if ($mysqli!=null) {
-           $sql = "DELETE * FROM tblComentarios WHERE idComentario='$idComentario' ";
+           $sql = "DELETE * FROM comentarios WHERE id=$idComentario";
         }
+        if ($mysqli->query($sql)) {
+            return "Eliminacion exitosa.";
+        }else{
+            return "Eliminacion fallida; error: ". $mysqli->error;
+        }
+    $mysqli->close();
     }
 }
 ?>

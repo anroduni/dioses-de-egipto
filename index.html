@@ -12,6 +12,7 @@
       integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
       crossorigin="anonymous"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </head>
   <body>
     <div>
@@ -137,7 +138,41 @@
       </div>
       <footer id="comentarios">copyright 2024</footer>
   
-     <script src="assets/js/game.js"></script>
+<script>
+  $(document).ready(function() { //se asegura de que el arbol dom ya este cargado
+    $("#btnActualizar").hide(); //oculta el boton
+    $("#alert1").hide(); //oculta la alerta//hide() en gral oculta elementos
+
+   // getComments();
+
+
+    $("#btnInsertar").click(function() { //se le otorga el envento onclick
+      $(`#opcionOpc`).prop("value", 1);
+      // $("#frmContacto").submit(function(){
+      var formData = $("#frmContacto").serialize(); //serializa el fomr,//investigagar mas
+      $.ajax({ //peticion ajax; hay maneraas mas recientes, investiga, no recuerdo el nombre
+        type: "POST", //escoge como mandar los datos, GET//POST//PUT//DELETE // anteriormente especificada en el method del form
+        url: "../controlador/clientesController.php", //lugar de destino del envio//ruta anteriormente en action del form
+        data: formData, //datos a mandar
+        success: function(data) { //tras la accion(mensaje), recibe una respuesta
+          console.log(data); //imprime data para saber su contenido
+          $("#alert1").show(); //muestra la alerta
+          $("#alert1").html(data) //coloca la info de la respuesta data, en la alerta
+          if (data.trim() === "Registro insertado") { //compara el valor recibido con el valor esperado
+            $("#alert1").attr("class", "alert-primary"); //otorga nuevos/distintos estilos de css boostrap
+          } else {
+            $("#alert1").attr("class", "alert-danger"); //addClass tambien funciona
+          }
+
+        }
+      });
+    });
+    return false; //retorna respuesta//investiga que onda
+  });
+</script>
+
+
+     <script src="assets/js/gae.js"></script>
       <script
         src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
