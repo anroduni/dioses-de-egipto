@@ -33,7 +33,7 @@ footer ul li {
   margin-bottom: 10px;
 }
 
-div {
+.div{ 
   background-color: #62331e;
   color: #fff;
   h3 {
