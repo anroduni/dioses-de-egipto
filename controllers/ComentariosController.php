@@ -21,8 +21,6 @@ switch ($opc) {
         #bd- base de datos- conjunto de datos almacenados bajo un contexto
 
 
-        break;
-
     case 2:
         $comentarios = new ComentariosModel();
         $getComments = $comentarios->SELECT();
