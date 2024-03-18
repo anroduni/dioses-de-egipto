@@ -66,8 +66,8 @@ function Start() {
     gameOver = document.querySelector(".game-over");
     suelo = document.querySelector(".suelo");
     contenedor = document.querySelector(".contenedor");
-    textoScore = document.querySelector(".score");
-    dino = document.querySelector(".dino");
+    textoScore = document.querySelector(".oroacumulado");
+    dino = document.querySelector(".saya");
     document.addEventListener("keydown", HandleKeyDown);
 }
 
@@ -150,8 +150,8 @@ function DecidirCrearNubes() {
 function CrearObstaculo() {
     var obstaculo = document.createElement("div");
     contenedor.appendChild(obstaculo);
-    obstaculo.classList.add("cactus");
-    if(Math.random() > 0.5) obstaculo.classList.add("cactus2");
+    obstaculo.classList.add("calavera");
+    if(Math.random() > 0.5) obstaculo.classList.add("osiris");
     obstaculo.posX = contenedor.clientWidth;
     obstaculo.style.left = contenedor.clientWidth+"px";
 
